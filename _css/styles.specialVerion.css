@@ -1,0 +1,1274 @@
+@charset "utf-8";@font-face{
+font-family:Hvn;src:url(../_fonts/HelveticaNeue-CondensedBold.eot?) format("eot"),url(../_fonts/HelveticaNeue-CondensedBold.otf) format("opentype"),url(../_fonts/HelveticaNeue-CondensedBold.woff) format("woff"),url(../_fonts/HelveticaNeue-CondensedBold.ttf) format("truetype"),url(../_fonts/HelveticaNeue-CondensedBold.svg#HelveticaNeue-CondensedBold) format("svg")}
+@font-face{
+font-family:'Hvn Regular';src:url(../_fonts/HelveticaNeueCyr-Light.eot?) format("eot"),url(../_fonts/HelveticaNeueCyr-Light.otf) format("opentype"),url(../_fonts/HelveticaNeueCyr-Light.woff) format("woff"),url(../_fonts/HelveticaNeueCyr-Light.ttf) format("truetype"),url(../_fonts/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light) format("svg")}
+@font-face{
+font-family:Abadi;src:url(../_fonts/AbadiMT-CondensedLight.eot?) format("eot"),url(../_fonts/AbadiMT-CondensedLight.otf) format("opentype"),url(../_fonts/AbadiMT-CondensedLight.woff) format("woff"),url(../_fonts/AbadiMT-CondensedLight.ttf) format("truetype"),url(../_fonts/AbadiMT-CondensedLight.svg#AbadiMT-CondensedLight) format("svg")}
+@font-face{
+font-family:fgb;src:url(../_fonts/FranklinGothic-Book.eot?) format("eot"),url(../_fonts/FranklinGothic-Book.woff) format("woff"),url(../_fonts/FranklinGothic-Book.ttf) format("truetype"),url(../_fonts/FranklinGothic-Book.svg#FranklinGothic-Book) format("svg")}
+html{
+/*background:url(../_images/bg.png)*/}
+body{
+/*background:url(../_images/bgHeaderCenter.jpg) center top no-repeat;*/min-width:1254px;
+font-size:18px;}
+a:hover{
+color:#ce0402}
+a.darck{
+font:18px Arial;color:#252525}
+.clearFix{
+clear:both}
+header{
+/*background:url(../_images/bgHeaderLeft.jpg) left top no-repeat*/}
+header .hrWrap{
+/*background:url(../_images/bgHeaderRight.jpg) right top no-repeat;*/height:250px}
+header .headerLeft {
+padding:15px 0 0 54px;float:left}
+header .headerLeft .logo a{
+width:150px;height:150px;display:block}
+header .headerLeft .logo a img{
+width: 150px;}
+header .headerRight{
+float:right;width:280px;padding-top:15px}
+header .headerRight h6{
+font:400 18px/14px Arial;color:#1b1b1b;padding-bottom:5px}
+header .headerRight .tel{
+display:block;font:20px/24px Abadi;color:#1b1b1b}
+header .headerRight .tel span{
+color:#6e6e6e}
+/*header .headerRight div{
+height:60px}*/
+header .headerRight div a,
+header .headerRight div .mailing{
+font:18px Arial;color:#2d2d2d;float:left;clear:left;margin-bottom:3px;border-bottom:1px dashed #2d2d2d;cursor:pointer;text-decoration:none}
+header .headerRight div a:hover,
+header .headerRight div .mailing:hover{
+border-bottom:0;padding-bottom:1px;color:#ce0402}
+header .headerRight a img{
+margin-right:5px;opacity:.7}
+header .headerRight a:hover img{
+opacity:1}
+header .headerCenter{
+width:400px;margin:auto;text-align:center;padding-top:5px}
+header .headerCenter h1{
+color:#535353;font:400 20px/1.2em Hvn;text-transform:uppercase;padding:10px 0}
+header .headerCenter h2{
+color:#535353;font:400 20px/1.2em Hvn;text-transform:uppercase;padding:10px 0}
+header .headerCenter h3{
+color:#535353;font:400 17px/1.2em Hvn;text-transform:uppercase;padding:1px 0}
+header .headerCenter h3 span{
+display:block;font-size:25px}
+header .headerCenter .p{
+padding:1px 0}
+.headerLines{
+/*background:url(../_images/bgHeaderLines.png) left top repeat-x;*/
+border-bottom: 1px solid black;
+height:5px
+}
+.leftColumn{
+/*background:url(../_images/bgContentLeftC.jpg) left 49px repeat-y*/}
+.leftColumn .lcT{
+/*background:url(../_images/bgContentLeftT.jpg) left top no-repeat*/}
+.leftColumn .lcT .lcB{
+/*background:url(../_images/bgContentLeftB.jpg) left bottom no-repeat*/}
+.leftColumn .lcT .lcB .rightColumn{
+/*background:url(../_images/bgContentRightC.jpg) right top repeat-y*/}
+.leftColumn .lcT .lcB .rightColumn .rcT{
+/*background:url(../_images/bgContentRightT.jpg) right top no-repeat*/}
+.leftColumn .lcT .lcB .rightColumn .rcT .rcB{
+/*background:url(../_images/bgContentRightB.jpg) right bottom no-repeat*/}
+.leftColumn .content{
+padding-top:20px;width:1000px;margin:auto}
+.leftColumn .content .nav{
+width:910px;margin:auto;height:35px}
+.leftColumn .content .nav.mainNav{
+width:100%;text-align:center}
+.leftColumn .content .nav.mainNav li{
+float:none;display:inline-block}
+.leftColumn .content .nav li{
+float:left;margin:0 10px;position:relative;height:26px;transition:.5s}
+.leftColumn .content .nav li a{
+color:#161615;font:18px Hvn;text-transform:uppercase;text-decoration:none}
+.leftColumn .content .nav li a.active,.leftColumn .content .nav li a:hover{
+text-decoration:underline;color:#ce0402}
+.leftColumn .content .nav li ul{
+position:absolute;left:-30px;top:25px;opacity:0;z-index:50}
+.leftColumn .content .nav.mainNav li ul{
+float:left;text-align:left;z-index:101}
+.leftColumn .content .nav li ul li{
+height:32px;margin:0;float:none}
+.leftColumn .content .nav li ul a{
+text-transform:none;display:block;padding:3px 15px 7px;background:#f7f5f6;min-width:250px}
+.leftColumn .content .nav li ul a:hover{
+text-decoration:none;color:#fff;background:#d83d3b}
+.leftColumn .content .nav li:hover{
+transition:1s}
+.leftColumn .content .nav li:hover ul{
+opacity:1}
+.leftColumn .content .poster{
+position:relative}
+.leftColumn .content .poster .posterLeft{
+float:left;width:656px;height:252px}
+.leftColumn .content .poster .img{
+width:656px;height:252px;position:relative;display:none}
+.leftColumn .content .poster .img img{
+width:656px;height:252px}
+.leftColumn .content .poster .img .age{
+font:20px fgb, Arial;color:#fcfcfb;position:absolute;right:0;top:15px;width:45px}
+.leftColumn .content .poster .img .next_performance_date{
+position:absolute;top:227px;background-color:#1A1A1A;opacity:.8;text-align:center;width:100%;height:25px;font:20px fgb, Arial;color:#fcfcfb}
+.leftColumn .content .poster .img .soldout{
+position:absolute;top:170px;text-align:right;left:10px}
+.leftColumn .content .poster .img .soldout img{
+width:164px;height:84px}
+.leftColumn .content .poster .img .lasttickets{
+position:absolute;top:180px;left:10px}
+.leftColumn .content .poster .img .lasttickets img{
+width:172px;height:66px}
+.leftColumn .content .poster .img .links{
+width:100px;position:absolute;right:10px;top:190px;z-index:100;text-align:right}
+.leftColumn .content .poster .img .links a{
+font:20px fgb, Arial;color:#fcfcfb;text-decoration:none;text-shadow:1px 1px 1px #000}
+.leftColumn .content .poster .img .links a:hover{
+color:#ce0402}
+.leftColumn .content .poster .img .links .actors{
+font:20px fgb, Arial;color:#fcfcfb;text-decoration:none;text-shadow:1px 1px 1px #000;cursor:pointer}
+.leftColumn .content .poster .img .links .actors:hover{
+color:#ce0402}
+.leftColumn .content .poster div.performanceShowed{
+display:block}
+.leftColumn .content .poster .posterName{
+background:url(../_images/bgShowName.gif) left top repeat-x #f8f4f0;padding:0 15px;height:87px}
+.leftColumn .content .poster .posterName .onePoster{
+display:none}
+.leftColumn .content .poster .posterName .onePoster .r{
+float:right;font:20px fgb, Arial;color:#090909;padding-top:5px}
+.leftColumn .content .poster .posterName .onePoster .r span{
+color:#727272}
+.leftColumn .content .poster .posterName .onePoster h4{
+font:400 27px fgb, Arial;color:#0e131b;padding-top:5px}
+.leftColumn .content .poster .posterName .onePoster h4 span.postfix,.leftColumn .content .poster .posterName .onePoster h4 span.prefix{
+font-size:20px}
+.leftColumn .content .poster .posterName div.posterShowed{
+display:block}
+.leftColumn .content .poster .posterRight{
+float:left}
+.leftColumn .content .poster .calendar{
+font:20px Abadi;width:260px;height:192px;background:#807f79;padding:30px 40px;color:#cccbcb;text-transform:uppercase}
+.leftColumn .content .poster .calendar table{
+width:100%}
+.leftColumn .content .poster .calendar table td{
+text-align:center;padding:4px 0}
+.leftColumn .content .poster .calendar table td .nav{
+color:#c6c6c6;text-decoration:none;font:22px fgb, Arial;display:inline}
+.leftColumn .content .poster .calendar table td a{
+color:#fff;text-decoration:none;cursor:pointer;display:block}
+.leftColumn .content .poster .calendar table td a:hover{
+color:#ce0402}
+.leftColumn .content .poster .calendar table .days td{
+font:18px fgb, Arial;color:#fff}
+.leftColumn .content .poster .calendar table td.month{
+text-align:center;font:20px fgb, Arial;color:#fff}
+.leftColumn .content .poster .calendar table td.current{
+padding:0}
+.leftColumn .content .poster .calendar table td.current a{
+color:#fff;background:#c51a31;padding:4px 0;cursor:default}
+.leftColumn .content .lines{
+background:url(../_images/bgLineSpecialVersion.png) center center no-repeat;height:30px}
+h1.pageHeader{
+font:400 30px/30px Hvn;color:#161615;text-transform:uppercase;padding:0 0 40px}
+.leftColumn .content h6.blockZagl{
+font:400 30px/30px Hvn;color:#161615;text-transform:uppercase;padding:0 0 10px}
+.leftColumn .content h4.blockSubZagl{
+font:400 20px/20px Hvn;color:#161615;text-transform:uppercase;padding:0 0 10px}
+.leftColumn .content .news .newsBlock{
+float:left;width:190px;padding-right:7px;font-family: fgb}
+.leftColumn .content .news .newsBlock span{
+display:block;font:18px 'Hvn Regular', Arial;color:#161615}
+.leftColumn .content .news .newsBlock a{
+/* specialVersion: font:14px -> font:18px */
+color:#242424;font:18px 'Hvn Regular', Arial;text-decoration:none}
+.leftColumn .content .news .newsBlock a:hover{
+color:#ce0402}
+.leftColumn .content .news .sovet{
+margin-left:55px;width:215px;text-align:center}
+.leftColumn .content .news .sovet a{
+font:18px Hvn;text-transform:uppercase;border-bottom:1px dashed #242424;cursor:pointer}
+.leftColumn .content .people .newsBlock a{
+font-size:19px}
+.leftColumn .content .partners{
+text-align:center;padding:30px 0 40px 80px;border-bottom:1px dotted #b8b7af}
+.leftColumn .content .partners p{
+float:left;color:#363636;font:18px fgb, Arial;padding:10px}
+.leftColumn .content .partners p span{
+display:block;min-height:50px}
+.leftColumn .content .partners p img{
+display:block;margin:0 auto 10px}
+.leftColumn .content footer{
+padding:30px 0 0;height:190px;color:#252525;font:17px fgb, Arial}
+.leftColumn .content footer .copy{
+float:left;width:33%}
+.leftColumn .content footer .adr{
+float:left;width:30%;padding-right:13%}
+.leftColumn .content footer .adr p{
+padding-bottom:10px}
+.leftColumn .content footer .adr p span{
+font-weight:700}
+.leftColumn .content footer .adr p a{
+color:#c71b11;border:0}
+.leftColumn .content footer .adr p a:hover{
+text-decoration:none}
+.leftColumn .content footer .adr a{
+color:#2d2d2d;display:inline-block;border-bottom:1px dashed #2d2d2d;cursor:pointer}
+.leftColumn .content footer .adr a:hover{
+border:0}
+.leftColumn .content footer .info{
+float:left;font-weight:700;width:23%}
+.leftColumn .content footer .info p{
+font-weight:400;color:#c71b12;padding-top:5px}
+.leftColumn .content footer .directions{
+text-decoration:none}
+.leftColumn .flleft{
+float:left}
+.leftColumn .pageNews{
+margin-top:40px}
+.leftColumn .pageNews .secondPageWrap .archive,.leftColumn .pageNews .secondPageWrap .blockZagl{
+margin-top:0}
+.leftColumn .pageNews .archive{
+display:block;float:left;color:#2d2d2d;font:19px Hvn;border-bottom:1px dashed #2d2d2d;margin:40px 0 0 35px;cursor:pointer}
+.leftColumn .pageNews .archive:hover,.leftColumn .pageNews a.activeArchive{
+color:#ce0402}
+.leftColumn .pageNews .newsBlock{
+padding-top:30px;height:240px}
+.leftColumn .pageNews .newsBlock a{
+display:block;overflow:hidden}
+.leftColumn .navigation{
+text-align:center;font:20px Hvn;color:#000;padding:40px 0 20px;border-bottom:1px dotted #b8b7af}
+.leftColumn .navigation a{
+text-decoration:none;color:#aa0301;padding:0 6px}
+.leftColumn .navigation a:hover{
+background:#aa0301;color:#efe9dd}
+.leftColumn .navigation span{
+padding:0 6px}
+.leftColumn .breadThrumbs{
+font:18px 'Hvn Regular';/*color:#7e7e7f;*/padding:0 0 10px 25px}
+.leftColumn .breadThrumbs a{
+color:#7e7e7f;text-decoration:none}
+.leftColumn .breadThrumbs a:hover{
+text-decoration:underline}
+.leftColumn .breadThrumbs span{
+/*color:#c11412*/}
+.leftColumn .secondPageWrap{
+background:#fff;padding:50px 40px;min-height:500px;font:20px/1.2em 'Hvn Regular';color:#252525}
+.leftColumn .secondPageWrap a{
+color:#990101;text-decoration:none}
+.leftColumn .secondPageWrap a:hover{
+color:red}
+.leftColumn .secondPageWrap a.darck{
+color:#252525}
+.leftColumn .secondPageWrap a.darck:hover{
+color:red}
+.leftColumn .secondPageWrap .actorLeft{
+text-align:justify;width:495px}
+.leftColumn .secondPageWrap h6.blockZagl{
+padding-bottom:40px}
+.leftColumn .secondPageWrap h6.blockZagl.buyZagl{
+padding-bottom:20px;width:210px;margin:0;border:0}
+.leftColumn .secondPageWrap.orderTickets .mark{
+margin-bottom:20px;margin-left:-90px;clear:both}
+.leftColumn .secondPageWrap .participate{
+padding-bottom:35px}
+.leftColumn .secondPageWrap .participate p{
+font:18px Hvn;color:#525252;padding-bottom:10px}
+.leftColumn .secondPageWrap .participate ul li{
+color:#bd0402;font:18px Hvn;padding:0 0 5px 15px}
+.leftColumn .secondPageWrap .actorH5{
+padding:20px 0;color:#2e2e2e;font:18px Hvn}
+.leftColumn .secondPageWrap .citate{
+color:#6e6e6e;font:italic 18px 'Hvn Regular'}
+.leftColumn .secondPageWrap .citate span{
+color:#9b9b9c;font:39px/16px Arial}
+.leftColumn .secondPageWrap .citate span.l{
+margin-right:20px}
+.leftColumn .secondPageWrap .citate span.r{
+margin-left:20px}
+.leftColumn .secondPageWrap .press p{
+color:#797979;font:18px 'Hvn Regular'}
+.leftColumn .secondPageWrap .press p a{
+font:18px Hvn;color:#252525}
+.leftColumn .secondPageWrap .press p a:hover{
+color:#a70202}
+.leftColumn .secondPageWrap .return{
+display:block;float:right;margin:60px 20px 0 0;font:18px Hvn;text-transform:uppercase}
+.leftColumn .secondPageWrap .return span{
+font:20px Arial}
+.actorsPage h2{
+font:20px Hvn;color:#3e3e3e;padding-bottom:25px}
+.leftColumn .actorsPage .sbHolder{
+float:left;margin:0 0 0 30px}
+.leftColumn .actorsPage .actors li{
+float:left;width:100px;margin:0 15px 0 0;text-align:center;height:210px}
+.leftColumn .actorsPage .actors li a{
+color:#262626;font:18px Hvn}
+.leftColumn .actorsPage .actors li a:hover{
+color:#a70202}
+.leftColumn .actorsPage .invite{
+padding-top:30px}
+.leftColumn .archivePage .sbHolder{
+float:left;margin:0 0 0 30px}
+.leftColumn .archivePage .sbSelector{
+display:block;height:28px;left:10px;outline:0;overflow:hidden;white-space:nowrap;position:absolute;top:5px;width:295px;font:18px 'Hvn Regular';color:#262626}
+.leftColumn .archivePage .invite{
+padding-top:30px}
+.leftColumn .perfomancesPage{
+position:relative;padding-top:30px}
+.leftColumn .perfomanceBlock{
+background:#f6f2ec;font:18px Hvn;color:#252525;height:157px;margin-bottom:10px;border: 1px solid #999;position:relative}
+.leftColumn .perfomanceBlock img{
+float:left;margin-right:15px}
+.leftColumn .perfomanceBlock h2{
+font:22px Hvn;color:#252525;text-transform:uppercase;height:45px}
+.leftColumn .perfomanceBlock span{
+color:#777;font:18px 'Hvn Regular';margin-right:10px}
+.leftColumn .perfomanceBlock span.postfix,.leftColumn .perfomanceBlock span.prefix{
+font:20px Hvn}
+.leftColumn .perfomanceBlock p{
+padding-bottom:2px}
+.leftColumn .perfomanceBlock .containsVideo{
+background-image: url("http://www.et-cetera.ru/_images/imgRolik_gray.png");
+background-repeat: no-repeat;
+background-position: 770px 5px;}
+.leftColumn .perfomanceBlock .age{
+float:right;color:#676666;font:20px/20px 'Hvn Regular';padding:5px 10px;height:20px}
+.leftColumn .perfomanceBlock .laureat{
+position:absolute;right:60px;top:15px;font:italic 18px 'Hvn Regular'}
+.leftColumn .perfomanceBlock .hall{
+float:right;clear:right;padding:65px 10px 0 0}
+.leftColumn .perfomanceBlock .duration{
+float:right;clear:right;padding:5px 10px 0 0}
+.leftColumn .perfomanceBlock:hover,.leftColumn div.perfomanceBlockActive{
+cursor:pointer;background:#222;color:#f6f2ec}
+.leftColumn .perfomanceBlock:hover div,.leftColumn .perfomanceBlock:hover h2,.leftColumn .perfomanceBlock:hover span,.leftColumn div.perfomanceBlockActive div,.leftColumn div.perfomanceBlockActive h2,.leftColumn div.perfomanceBlockActive span{
+color:#f6f2ec}
+.leftColumn .performanceNav{
+text-align:right;padding-top:35px;font:24px/24px Hvn;color:#a9a9a9}
+.leftColumn .performanceNav span{
+padding:0 6px}
+.leftColumn .performanceNav a{
+padding:0 6px;color:#484848;text-decoration:none;display:inline-block}
+.leftColumn .performanceNav a:hover{
+background:#aa0301;color:#efe9dd}
+.popup_comment{
+box-shadow:5px 5px 10px #A29F9B;background:#F6F2EC;color:#3E3E3E;z-index:1001;left:575px;opacity:1;position:absolute;top:0;height:480px;font:18px 'Hvn Regular';display:none}
+.popup_comment.exist{
+left:0;width:100%}
+.popup_comment .comment_list{
+width:550px;display:inline-block;overflow:auto;height:100%}
+.popup_comment .comment_list .element,.popup_comment .comment_list .element .text{
+padding:20px}
+.popup_comment .comment_list .element .autor{
+padding-left:250px;font:18px Hvn}
+.popup_comment .comment_list .element .date{
+padding-top:10px;width:140px;float:right}
+.popup_comment .comment_list .separator{
+padding:20px}
+.popup_comment .comment_list .separator hr{
+color:#EEE}
+.popup_comment .comment_send{
+box-shadow:5px 5px 10px #A29F9B;background:#F6F2EC;color:#3E3E3E;z-index:1001;height:100%;left:300px;width:410px;float:right}
+.popup{
+position:absolute;width:460px;padding-bottom:50px;left:50%;margin-left:20px;top:20px;box-shadow:5px 5px 10px #a29f9b;background:#f6f2ec;color:#3e3e3e;z-index:1001;display:none}
+.popup img{
+float:right;margin:15px 12px}
+.popup h6{
+font:20px Hvn;padding-left:25px}
+.popup h6.hall{
+padding:25px}
+.popup h3{
+font:24px Hvn;padding-left:25px}
+.popup h3 a{
+color:#c71b11}
+.popup h3 a:hover{
+text-decoration:none}
+.popup p{
+padding:0 40px 0 25px;font:18px 'Hvn Regular'}
+.popup .buyTicket{
+position:absolute;left:0;bottom:-62px;width:100%;padding-top:25px;height:62px}
+.popup_actors{
+position:absolute;width:490px;/*left:50%;margin-left:20px;*/top:0px;box-shadow:5px 5px 10px #a29f9b;background:#f6f2ec;padding:25px;font:18px/1.2em 'Hvn Regular';color:#252525;z-index:1001;display:none}
+.popup_questionnaire{
+position:absolute;width:490px;/*left:50%;margin-left:20px;*/top:0px;box-shadow:5px 5px 10px #a29f9b;background:#f6f2ec;padding:25px;font:18px/1.2em 'Hvn Regular';color:#252525;z-index:1001;display:none}
+.popup_mailing{
+position:absolute;width: 656px;top: 0px;box-shadow: 5px 5px 10px #a29f9b;background: #f6f2ec;font: 14px/1.2em 'Hvn Regular';color: #252525;z-index: 1001;display: none;height: 252px;z-index:1001;display:none;}
+.popup_index{
+position:absolute;/*width:410px;*/top:-310px;left: 240px;box-shadow:5px 5px 10px #191919;background:#191919;z-index:1001;display:none;
+/*background-image: url(/upload/medialibrary/images/Popup_Inspector.jpg)*/}
+.questionnaireLabel {
+background-image: url(/upload/medialibrary/images/btn_questionnaire.png);
+width: 31px;
+height: 212px;
+position: absolute;
+margin: 0px -30px;
+cursor: pointer;
+}
+.popup_questionnaire .header{
+font:18px Hvn;color:#252525;text-transform:uppercase}
+.popup_actors .header{
+font:18px Hvn;color:#252525;text-transform:uppercase}
+.popup_actors table tr td{
+padding-bottom:8px!important}
+.popup_actors td{
+padding-right:10px}
+.popup_actors table tr td:nth-child(2n){
+font:18px Hvn}
+.popup_actors a{
+color:#990101;text-decoration:none}
+.popup_actors a:hover{
+color:red}
+.shadow{
+position:fixed;left:0;top:0;background:#000;opacity:.3;width:100%;height:100%;z-index:1000;display:none}
+.buyTicket{
+display:block;text-decoration:none;text-align:center;width:100%;color:#f7f3ed;background:#d83c3a;border:0;font:25px Hvn;text-transform:uppercase;height:62px;bottom:-62px;padding-top:25px;cursor:pointer}
+.buyTicket_plate{
+position:absolute;left:0;bottom:0;padding-top:25px;height:62px;display:block;text-decoration:none;width:100%;background:#D83C3A;border:0}
+.buyTicket.on_main span{
+margin-top:26px;display:inline-block}
+.buyTicket span{
+border-bottom:1px dashed #f7f3ed}
+.buyTicket:hover span{
+border:0;color:#f7f3ed}
+.performance{
+position:relative}
+.performance p{
+padding-bottom:20px}
+.performance .rightWrap{
+float:right;width:370px}
+.performance .rightWrap ul li{
+float:left;height:60px;width:81px}
+.performance .rightWrap ul li.hidden{
+display:none}
+.performance .rightWrap ul li.canbehidden{
+display:inline}
+.performance .rightWrap ul li.firstImg{
+width:100%;height:240px;text-align:left}
+.performance .rightWrap .performancePartners{
+padding:40px 0 15px}
+.performance .rightWrap .performancePartners img{
+margin-right:10px}
+.performance .rightWrap .yashare-auto-init{
+float:right;margin:10px 18px 0 0}
+.performance .rightWrap .show-hide-panel{
+text-decoration:none;text-align:center;height:10px;color:#d83c3a;border-width:0 1px 1px;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;border-image:none;border-style:solid;border-color:#dbccb4;padding:10px;cursor:pointer}
+.performance .rightWrap .show-hide-panel.show{
+background:url(/_images/icoArrow-Down.svg) center center no-repeat #990101}
+.performance .rightWrap .show-hide-panel.hide{
+background:url(/_images/icoArrow-Up.svg) center center no-repeat #990101}
+.performance .rightWrap .comment-panel,
+.performance .rightWrap .excursion-panel{
+text-decoration:none;text-align:center;height:15px;border-width:1px;border-image:none;border-style:solid;border-color:#dbccb4;padding:10px;margin-top:10px;font:18px Hvn;color:#252525;text-transform:uppercase}
+.performance .rightWrap .comment-panel:hover a {color:#ce0402}
+.performance .rightWrap .comment-panel:hover {cursor:pointer; background-color:#fffbeb}
+.performance .rightWrap .excursion-panel{
+background-image: url("/upload/medialibrary/images/excursion.jpg");padding: 0px;height: 110px;}
+.performance .leftWrap{
+float:left;width:510px}
+.performance .leftWrap .wrapper{
+float:right;width:155px;font:18px Hvn;margin:0 0 20px 15px}
+.performance .leftWrap .buyTicketLabel{
+background-color:#CE0402;padding:6px;text-align:center;color:#F7F3ED}
+.performance .leftWrap a.buyTicketLabelWrap{
+text-decoration:none}
+.performance .leftWrap .premierLabelWrap{
+text-align: center;margin-top:10px}
+.performance .leftWrap .promoRoll{
+float:right;width:100px;font:18px Hvn;margin:0px 0px 10px 0px;text-align:right}
+.performance .leftWrap .schedule{
+margin-top:10px;text-align:left}
+.performance .leftWrap .schedule .header{
+font:18px Hvn Regular;color:#777}
+.performance .leftWrap .author,
+.performance .leftWrap .ageWrap,
+.performance .leftWrap .genre{
+font:18px Hvn;color:#252525;padding-bottom:15px}
+.performance .leftWrap .ageWrap .age{
+color: #676666;font: 20px/20px "Hvn Regular";}
+.performance .leftWrap .author span,
+.performance .leftWrap .ageWrap span,
+.performance .leftWrap .genre span{
+font:18px 'Hvn Regular';color:#777}
+.performance .leftWrap .performanceDescription{
+padding:15px 0 25px;line-height:1.3em}
+.performance .leftWrap .creators{
+padding:60px 0 55px}
+.performance .leftWrap .creators p{
+padding:0 0 8px 200px;position:relative}
+.performance .leftWrap .creators p span{
+font:18px 'Hvn Regular';color:#777;display:block;position:absolute;left:0;top:0;width:195px}
+.performance .leftWrap .creators p ins{
+display:block;font:18px 'Hvn Regular'}
+.performance .leftWrap h6{
+font:400 18px Hvn;color:#252525;padding-bottom:20px}
+.performance .leftWrap .actors{
+color:#990101;float:right;cursor:pointer;text-decoration:none}
+.performance .leftWrap .actors a:hover{
+color:red}
+.performance .leftWrap .actors p{
+font:18px Hvn;color:#252525;padding-bottom:20px}
+.performance .leftWrap .actors p span{
+font:18px 'Hvn Regular';color:#777;display:inline-block;width:255px}
+.performance .leftWrap .actors p ins{
+display:block;font:18px 'Hvn Regular';padding-left:255px}
+.performance .secondPageWrap{
+position:relative;padding-bottom:120px}
+.performance .secondPageWrap .press p{
+padding:0}
+.performance .secondPageWrap a.buyTicket{
+color:#f7f3ed;width:100%;position:absolute;left:0;bottom:0;padding-top:25px;height:62px}
+.forAudience .secondPageWrap{
+position:relative}
+.forAudience h2{
+font:18px Hvn;color:#252525;text-transform:uppercase}
+.forAudience .secondPageWrap span.strong{
+font:18px Hvn;color:#252525}
+.forAudience .secondPageWrap .element .context{
+display:inline-block;width:550px;float:left;padding:20px 0}
+.forAudience .secondPageWrap .element .img{
+float:right;padding:20px 0}
+.forAudience .secondPageWrap ul{
+padding:25px 0}
+.forAudience .secondPageWrap ul li{
+padding:0 0 5px 25px;font:18px Hvn;color:#292929;position:relative}
+.forAudience .secondPageWrap ul li a{
+text-decoration:underline}
+.forAudience .secondPageWrap ul li:before{
+content:"-";position:absolute;left:15px;top:0}
+.forAudience .secondPageWrap .times{
+padding-bottom:50px}
+.forAudience .secondPageWrap form{
+padding:10px 0 35px;width:565px;display:block}
+.forAudience .secondPageWrap form input,.forAudience .secondPageWrap form textarea{
+width:555px;box-shadow:inset 3px 5px 5px #d2d0cf;border:1px solid #f6f2ec;border-bottom:1px solid #f5f3f1;border-right:1px solid #efedeb;padding:5px;margin-bottom:15px;font:18px 'Hvn Regular';color:#262626}
+.forAudience .secondPageWrap form input.send,.forAudience .secondPageWrap form textarea.send{
+box-shadow:none}
+.forAudience .secondPageWrap form input.error,.forAudience .secondPageWrap form textarea.error{
+border:1px solid red}
+.forAudience .secondPageWrap form .send,.forAudience .secondPageWrap form a{
+display:block;float:right;background:#d83c3a;color:#fcfdfe;font:18px Hvn;text-align:center;width:190px;height:33px;text-transform:uppercase}
+.forAudience .secondPageWrap form .send:hover,.forAudience .secondPageWrap form a:hover{
+background:#b83331;color:#fcfdfe}
+.forAudience .secondPageWrap .abonPopup{
+background:#f6f2ec;position:absolute;left:470px;top:-300px;width:465px;box-shadow:5px 10px 10px #9e9c98;display:none;z-index:1001;opacity:0}
+.forAudience .secondPageWrap .abonPopup h4{
+color:#3e3e3e;font:24px Hvn;padding:20px;text-transform:uppercase}
+.forAudience .secondPageWrap .abonPopup p{
+color:#3e3e3e;font:18px/1.4em 'Hvn Regular';padding:0 20px 50px}
+.forAudience .secondPageWrap .abonPopup .buyTicket{
+width:100%}
+.tourPerformances{
+float:right;width:305px;/*background:#f6f2ec;*/padding:40px 25px 25px;border-left: 1px solid black;}
+.tourPerformances a{
+color:#000;font:18px Hvn;text-decoration:none}
+.tourPerformances a span{
+font:18px 'Hvn Regular';display:block}
+.tourPerformances a ins{
+font:18px 'Hvn Regular';display:block;margin-bottom:15px}
+.tourPerformances a:hover{
+color:#ce0402}
+.pressPage{
+/*background:#f6f2ec;*/padding:50px 40px;font:18px/1.2em 'Hvn Regular';color:#252525;width:545px;float:left}
+.pressPage .left{
+width:565px;float:left}
+.pressPage .categories li{
+float:left;width:25%}
+.pressPage .categories li a{
+color:#252525;font:18px Hvn;text-transform:uppercase;text-decoration:none}
+.pressPage .categories li a.active,.pressPage .categories li a:hover{
+text-decoration:underline;color:#ce0402}
+.pressPage .sities{
+padding:20px 0 0}
+.pressPage .sities a{
+display:inline-block;margin-right:25px;color:#000;font:18px Hvn;text-decoration:none}
+.pressPage .sities a span{
+font:18px 'Hvn Regular'}
+.pressPage .sities a.active,.pressPage .sities a:hover{
+color:#ce0402}
+.pressPage .years{
+border-bottom:1px dotted #8b8986;width:100%;padding:20px 4%;margin:0 0 25px -4%}
+.pressPage .years a{
+display:inline-block;margin-right:15px;color:#000;font:18px Hvn;text-transform:uppercase;text-decoration:none}
+.pressPage .years a.active,.pressPage .years a:hover{
+color:#ce0402}
+.pressPage h5{
+font:20px Hvn;color:#050505}
+.pressPage h6{
+font:18px Hvn;color:#6a6a6a;padding:25px 0 20px}
+.pressPage .info{
+color:#6a6a6a;line-height:1.4em;text-indent:20px;padding-bottom:20px}
+.pressPage .info a{
+color:#b30401;text-decoration:none}
+.pressPage .info a:hover{
+text-decoration:underline}
+.pressPage .press_content{
+text-align:justify}
+.pressPage .press_content a{
+color:#990101;text-decoration:none}
+.trustee h2{
+color:#b30201;font:18px Hvn;text-transform:uppercase;padding-bottom:5px}
+.trustee h3{
+color:#3e3e3e;font:20px Hvn}
+.trustee .chairman{
+padding-bottom:40px}
+.trustee p{
+padding-bottom:25px}
+.photoGallery li{
+float:left;padding:0 10px 10px 0}
+.gallPage li{
+overflow:hidden}
+.partnersPage div{
+padding-bottom:50px;text-align:center}
+.partnersPage div p{
+padding:10px 0}
+.partnersPage h2{
+font:20px Hvn;color:#3e3e3e;padding-bottom:25px}
+.partnersPage div h6{
+font:20px Hvn;color:#3e3e3e;padding-bottom:25px}
+.partnersPage div img{
+padding:5px 0}
+.partnersPage div span{
+display:block;padding-bottom:25px}
+.oneNew .right{
+float:right;width:360px}
+.oneNew .right ul li{
+float:left;height:60px;width:90px}
+.oneNew .right ul li.firstImg{
+width:100%;height:240px}
+.oneNew .left{
+float:left;width:490px}
+.oneNew .left .detail_news_text{
+text-align:justify;padding-bottom:20px}
+.oneNew .date{
+/*color:#777;*/display:block;font:20px 'Hvn Regular';padding-bottom:15px}
+.oneNew h5{
+font:18px Hvn;color:#252525;padding-bottom:15px}
+.oneNew .otherNews{
+padding-top:80px}
+.oneNew .newsArchive{
+float:left;margin-left:35px;position:relative;height:30px}
+.oneNew .newsArchive .archiveLink{
+display:block;float:left;color:#2d2d2d;font:19px Hvn;border-bottom:1px dashed #2d2d2d;cursor:pointer}
+.oneNew .newsArchive .archiveLink:hover,.oneNew .newsArchive a.activeArchive{
+color:#ce0402}
+.oneNew .newsArchive ul{
+position:absolute;left:0;top:30px;display:none;z-index:15}
+.oneNew .newsArchive ul li{
+position:relative;padding-right:2px}
+.oneNew .newsArchive ul li ul{
+left:102px;top:0}
+.oneNew .newsArchive ul li ul a{
+font:18px Arial;color:#242424}
+.oneNew .newsArchive ul a{
+display:block;width:80px;background:#fff;color:#3e3e3e;font:18px Hvn;padding:3px 0 3px 20px;box-shadow:5px 5px 5px rgba(0,0,0,.3)}
+.oneNew .newsArchive ul a:hover{
+background:#d83c3a;color:#fdfdfd}
+.oneNew .carouselWrap{
+position:relative;padding-left:20px;height:350px}
+.oneNew .carousel ul li{
+float:left;width:25%;height:300px}
+.oneNew .carousel ul li img{
+display:block}
+.oneNew .carousel ul li span{
+display:block;font:18px 'Hvn Regular', Arial;color:#161615}
+.oneNew .carousel ul li a{
+color:#242424;font:18px 'Hvn Regular', Arial, Arial;text-decoration:none;max-width:190px;display:block}
+.oneNew .carousel ul li a:hover{
+color:#ce0402}
+.oneNew .carouselWrap .next,.oneNew .carouselWrap .prev{
+position:absolute;top:50px;display:block;width:18px;height:66px;cursor:pointer;opacity:.5}
+.oneNew .carouselWrap .next{
+right:-20px;background:url(../_images/bRight.gif) left top no-repeat}
+.oneNew .carouselWrap .prev{
+left:-20px;background:url(../_images/bLeft.gif) left top no-repeat}
+.oneNew .carouselWrap .next:hover,.oneNew .carouselWrap .prev:hover{
+opacity:1}
+.contacts{
+width:100%}
+.contacts td{
+width:50%;padding-bottom:15px}
+.contacts td .wraps{
+display:none;height:40px;float:left;min-width:50%}
+.contacts td div.active{
+display:block}
+.contacts td h6{
+font:18px Hvn;color:#252525;padding-bottom:5px}
+.contacts td p{
+font:18px Hvn;color:#252525}
+.contacts td span{
+font:18px Hvn;color:#252525;display:block;padding-top:10px}
+.contacts td ins{
+font:18px 'Hvn Regular';color:#252525}
+.contactsPage .sectionHeader,.contactsPage .surname{
+text-transform:uppercase;float:left}
+.contactsPage .line{
+height:80px}
+.sbHolder .sbOptions li a,.sbHolder .sbSelector,.sbHolder .sbToggle{
+cursor:pointer}
+.orderTickets .right{
+float:right;width:200px}
+.orderTickets .right h6{
+font:19px Hvn;color:#2d2d2d;border-bottom:1px dashed #636260;width:120px;text-align:center;float:right;margin:0 20px 10px 0}
+.orderTickets .right a{
+display:block;float:right;clear:right;background:url(../_images/bgBbuy.gif) left top no-repeat;width:159px;height:51px;text-align:center;font:24px/20px Hvn;color:#fcfcfb;margin-bottom:3px;padding-top:20px;transition:.3s;transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg)}
+.orderTickets .right a:hover{
+color:#ffd}
+.orderTickets .right a.abonements{
+font-size:18px;margin:30px 0;padding-top:12px;height:59px}
+.orderTickets .right a.planes{
+background:url(../_images/orderTickets_bgPlanes.png) left top no-repeat;height:90px}
+.orderTickets .right a.etc{
+background:url(../_images/orderTickets_bgBuyTicketEtCetera.png) left top no-repeat}
+.orderTickets .right a button.etcWrap{
+width:100%!important;height:100%!important;position:absolute!important;left:0!important;top:0!important;background:0 0!important;border:0!important;cursor:pointer!important;padding:0!important;margin:0!important}
+.orderTickets .right a.radario{
+background:url(/upload/medialibrary/EtCetera_Radario.png) left top no-repeat}
+.orderTickets .right a.radario div.radarioWrap{
+width:100%!important;height:100%!important;position:absolute!important;left:0!important;top:0!important;background:0 0!important;border:0!important;cursor:pointer!important;padding:0!important;margin:0!important}
+.orderTickets .right p{
+clear:right;font:18px/18px Hvn;color:#2d2d2d;text-align:right;padding-bottom:15px}
+.orderTickets .right p span{
+display:block;padding-bottom:15px}
+.orderTickets .right p span.tel{
+font:27px/27px Hvn}
+.orderTickets table{
+width:700px}
+.orderTickets table td,
+.questionnaire table td{
+font:18px Hvn;color:#262626;vertical-align:top}
+.orderTickets table td.l{
+/*width:170px;*/padding-top:10px}
+.questionnaire table td.l{
+width:250px;padding-top:10px;padding-right: 10px;}
+.orderTickets table input,.orderTickets table textarea{
+background:#f8f6f4;height:28px;width:315px;box-shadow:inset 0 2px 3px #d2d0cf;margin:5px 0 10px;border:1px solid #cfcfcf;border-bottom:0;padding:0 10px}
+.questionnaire table input,.questionnaire table textarea{
+background:#f8f6f4;box-shadow:inset 0 2px 3px #d2d0cf;margin:5px 0 10px;border:1px solid #cfcfcf;border-bottom:0;padding: 5px 10px;}
+.orderTickets table textarea{
+height:100px;padding:10px;margin-bottom:20px}
+.questionnaire table textarea{
+height:100px;width: 300px;padding:10px;margin-bottom:20px}
+.orderTickets table textarea.otherSource,
+.questionnaire table textarea.otherSource{
+width:295px;margin-left:20px}
+.orderTickets .promo{
+padding-bottom:20px}
+.orderTickets .zriteli{
+font:18px Hvn;color:#252525;padding:10px 0 20px}
+.orderTickets .send,
+.questionnaire .send{
+background:#d83c3a;border:0;color:#fcfdfe;font:18px Hvn;width:200px;padding:4px 0;margin:20px 0 0 170px;text-transform:uppercase;cursor:pointer}
+.orderTickets .send:hover,
+.questionnaire .send:hover{
+color:#ffc}
+.authorsColumn{
+background:#f6f2ec;width:190px;float:left;margin:50px 8px 30px 0}
+.authorsColumn a{
+text-decoration:none;color:#000;font:18px Hvn}
+.authorsColumn a:hover{
+color:#ce0402}
+.authorsColumn h2{
+padding:30px 0;text-align:center;border-bottom:1px dotted #8b8986}
+.authorsColumn h2 a{
+color:#040404;font:18px Hvn;text-transform:uppercase}
+.authorsColumn ul{
+padding:20px 20px 50px}
+.creatorsColumn{
+background:#f6f2ec;width:190px;float:left;margin:50px 8px 30px 0}
+.creatorsColumn a{
+text-decoration:none;color:#000;font:18px Hvn}
+.creatorsColumn a:hover{
+color:#ce0402}
+.creatorsColumn h2{
+padding:30px 0;text-align:center;border-bottom:1px dotted #8b8986;color:#040404;font:18px Hvn;text-transform:uppercase}
+.creatorsColumn ul{
+padding:20px 5px 50px 15px}
+.leftColumn .authors2 p{
+padding-bottom:20px}
+.leftColumn .authors2 .allAuthors{
+border-bottom:1px dotted #8b8986;height:55px}
+.leftColumn .authors2 .allAuthors h2{
+padding:0 65px 0 0;float:left}
+.leftColumn .authors2 .allAuthors h2 a{
+color:#040404;font:18px Hvn;text-transform:uppercase}
+.leftColumn .authors2 .allAuthors h2 a.active,.leftColumn .authors2 .allAuthors h2 a:hover{
+color:#ce0402}
+.leftColumn .authors2 .allAuthors h2 a.active{
+text-decoration:underline}
+.leftColumn .authors2 .allAuthors h2:last-child{
+padding:0}
+.leftColumn .authors2 ul{
+padding:20px 60px 20px 0;float:left}
+.leftColumn .authors2 ul a{
+text-decoration:none;color:#6a6a6a;font:18px Hvn}
+.leftColumn .authors2 ul a:hover{
+color:#ce0402}
+.leftColumn .authors2 ul.authorList{
+padding-right:0;width:220px;float:left}
+.leftColumn .authors2 ul.authorList a.active{
+color:#ce0402;font-size:18px;text-transform:uppercase}
+.leftColumn .authors2 .authorWrap{
+background:#faf8f5;float:right;width:600px;box-shadow:5px 5px 5px rgba(0,0,0,.2);margin-top:20px;padding:20px 20px 140px}
+.leftColumn .authors2 .authorWrap .photoGallery{
+float:right;width:295px;padding:0 0 70px 10px}
+.leftColumn .authors2 .authorWrap .photoGallery a{
+margin:0 10px 10px 0;display:block;float:left}
+.leftColumn .authors2 .authorWrap h4{
+font:18px Hvn;color:#525252}
+.leftColumn .authors2 .authorWrap ul{
+padding:10px 0 25px;float:none}
+.leftColumn .authors2 .authorWrap ul li{
+padding:0 0 5px 20px}
+.leftColumn .authors2 .authorWrap ul li a{
+color:#bd0402;font:18px Hvn}
+.leftColumn .authors2 .authorWrap ul li a:hover{
+text-decoration:underline}
+.leftColumn .authors2 .authorWrap p{
+padding-bottom:15px}
+.leftColumn .authors2 .authorWrap .press{
+font:18px Hvn;color:#252525;padding:75px 0 20px}
+.leftColumn .authors2 .authorWrap .pressText p{
+color:#797979;font:18px 'Hvn Regular';padding-bottom:5px}
+.leftColumn .authors2 .authorWrap .pressText p a{
+font:18px Hvn;color:#252525}
+.leftColumn .authors2 .authorWrap .pressText p a:hover{
+color:#a70202}
+.afisha .date{
+text-align:center;font:24px Hvn;color:#060606}
+.afisha .date span{
+display:inline-block;padding:0 20px}
+.afisha .date a{
+color:#8b8a8a;text-decoration:none}
+.afisha .date a:hover{
+cursor:pointer;color:#060606}
+.afisha table{
+/*width:100%*/}
+.afisha table th{
+font:24px Hvn;color:#535353;text-align:center;vertical-align:bottom;padding-bottom:10px;height:50px;text-transform:uppercase}
+.afisha table .daynumber{
+padding:0 4px;float:right;font:24px Hvn;color:#fbf9f9;text-shadow:1px 1px 1px #000;opacity:.9}
+.afisha table th.weekday{
+color:#d83c3a}
+.afisha table td.weekday .daynumber{
+color:#C71B11}
+.afisha table td{
+background:#807e78;border:1px solid #eae5d7;width:140px;height:220px}
+.afisha table td div{
+position:relative}
+.afisha table td div.premierLabel2 {
+    position: absolute;
+    padding: 6px 0;
+    font: 14px/1.1em Hvn;
+    color: #ba0000;
+	background-color: white;
+    opacity: .8;
+    width: 100%;
+}
+.afisha table td div ins{
+display:block;position:absolute;top:-152px;right:5px;font:24px Hvn;color:#fbf9f9}
+.afisha table td p{
+font:20px/1.1em Hvn;color:#fefefe;padding:0 8px 8px;cursor:pointer;text-shadow: 1px 1px 1px #000}
+.afisha table td p.mm{
+color:#FEBC11}
+.afisha table td p.mmm{
+color:#000}
+.afisha table td p span{
+font:18px 'Hvn Regular';display:block}
+.afisha table td p span.postfix,.afisha table td p span.prefix{
+font-size:18px}
+.afisha table td p span.sp_font{
+font:18px/1.1em Hvn;display:block;text-overflow:ellipsis;overflow:hidden}
+.afisha .hover_8:hover{
+overflow:''}
+.afisha table td p span.sp_font.time{
+font:18px 'Hvn Regular';display:block}
+.afisha table td.past{
+background:#bdbcb3}
+.afisha table td.withShow p:hover{
+text-decoration:underline}
+.afisha table td.allSale,.afisha table td.allSale:hover{
+background-image:url(../_images/bgAllSale.png);background-position:10px 10px;background-repeat:no-repeat}
+.pt10{
+padding-top:10px}
+.pb10{
+padding-bottom:10px}
+.days_container .days_names{
+display:inline-block}
+.days_container .days_names .day{
+font:20px fgb, Arial;color:#fff}
+.days_container .days_numbers{
+display:inline-block}
+.days_container .day{
+width:29px;height:26px;float:left;text-align:center;margin-right:5px;line-height:26px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.days_container .day.active{
+color:#fff;background:#c51a31}
+.days_container .day.active:hover{
+cursor:default!important;color:#fff!important}
+.days_container .day.has_action{
+color:#fff;font-weight:bolder}
+.days_container .day.has_action:hover{
+color:#ce0402;font-weight:bolder;cursor:pointer}
+.days_container .day.today{
+color:#febc11}
+.days_container .day.hide_this{
+visibility:hidden}
+.nav:hover{
+cursor:pointer}
+.calendar_slides{
+position:relative}
+.calendar_slides .slidee .slide{
+width:656px;height:339px;float:left}
+.calendar_slides .next{
+position:absolute;width:43px;height:43px;top:45%;right:20px;margin-top:-20px;z-index:1;background:url(/_images/bt.png) -43px 0 no-repeat}
+.calendar_slides .next:hover{
+background:url(/_images/bt.png) -43px -43px no-repeat;cursor:pointer}
+.calendar_slides .prev{
+position:absolute;width:43px;height:43px;top:45%;left:20px;margin-top:-20px;z-index:1;background:url(/_images/bt.png) no-repeat}
+.calendar_slides .prev:hover{
+background:url(/_images/bt.png) 0 -43px no-repeat;cursor:pointer}
+.calendar_slides .next.disabled,.calendar_slides .prev.disabled{
+visibility:hidden}
+.afisha .slides{
+width:140px;position:absolute;overflow:hidden}
+.afisha .slides .slide{
+width:140px;height:220px;background-repeat:no-repeat;float:left}
+.afisha .slides .slide .soldOut{
+position:absolute;width:100%;text-align:center;top:25px}
+.afisha .slides .slide .soldOut2{
+position:absolute;width:100%;top:128px;left:80px}
+.afisha .slides .slide .banner{
+height:50%;background-color:#1A1A1A;opacity:1;top:50%}
+.afisha .slides .slide .banner.newYearBanner{
+background-image: url("/upload/medialibrary/images/blank_ChristmasHoliday2016.png")}
+.afisha .slides .slide .banner a{
+text-decoration:none}
+.perfomance_detail_text{
+text-align:justify}
+.perfomance_detail_text table{
+width:100%;text-align:left}
+.perfomance_detail_text table tr td{
+padding-bottom:8px!important;padding-right:10px}
+.perfomance_detail_text table tr td:nth-child(even){
+font:18px Hvn;color:#252525}
+.perfomance_detail_text table tr td ins{
+display:block;font:18px 'Hvn Regular'}
+.perfomance_detail_text table tr td[colspan]:not([colspan="1"]){
+font:18px Hvn;color:#252525;text-transform:uppercase}
+.right.detail_news_photo,.secondPageWrap .images,.secondPageWrap .images.detail_news_photo{
+float:right;width:370px}
+.right.detail_news_photo ul li,.secondPageWrap .images.detail_news_photo ul li{
+float:left;height:60px;width:80px}
+.right.detail_news_photo ul li.firstImg,.secondPageWrap .images.detail_news_photo ul li.firstImg{
+width:350px;height:231px;text-align:center;background:#fff;padding:0;margin-bottom:10px}
+.right.detail_news_photo .yashare-auto-init,.secondPageWrap .images.detail_news_photo .yashare-auto-init{
+float:right;margin-right:18px}
+.comment_us table td{
+font:18px Hvn;color:#262626;vertical-align:top}
+.comment_us table td.l{
+padding-top:10px;padding-left:20px;padding-right:10px}
+.comment_us table input,.comment_us table textarea{
+background:#f8f6f4;height:28px;box-shadow:inset 0 2px 3px #d2d0cf;margin:5px 0 10px;border:1px solid #cfcfcf;border-bottom:1px solid #f6f2ec;padding:0 10px}
+.comment_us table input{
+width:230px}
+.comment_us table textarea{
+width:340px}
+.comment_us table input.error,.comment_us table textarea.error{
+border:1px solid red}
+.comment_us table textarea{
+height:113px;padding:10px;margin-bottom:7px;margin-left:20px;resize:none}
+.comment_us table textarea.otherSource{
+width:295px;margin-left:20px}
+.comment_us .promo{
+padding-bottom:32px;font-size:18px;color:#252525;font-family:Hvn;margin-top:46px;padding-left:20px}
+.comment_us .send{
+background:#d83c3a;border:0;color:#fcfdfe;font:18px Hvn;width:370px;padding:5px 0;margin:20px 0 0 20px;text-transform:uppercase;cursor:pointer}
+.comment_us .send:hover{
+color:#ffc}
+.comment_us .required{
+color:red}
+.comment_us .info_req{
+font-size:18px;padding-left:20px}
+.write_us table{
+width:700px}
+.write_us table td{
+font:18px Hvn;color:#262626;vertical-align:top}
+.write_us table td.l{
+width:170px;padding-top:10px}
+.write_us table input,.write_us table textarea{
+background:#f8f6f4;height:28px;width:405px;box-shadow:inset 0 2px 3px #d2d0cf;margin:5px 0 10px;border:1px solid #cfcfcf;border-bottom:1px solid #f6f2ec;padding:0 10px}
+.write_us table input.error,.write_us table textarea.error{
+border:1px solid red}
+.write_us table textarea{
+height:113px;padding:10px;margin-bottom:7px;resize:none}
+.write_us table textarea.otherSource{
+width:295px;margin-left:20px}
+.write_us .promo{
+padding-bottom:32px;font-size:18px;color:#252525;font-family:Hvn;margin-top:46px}
+.write_us .send{
+background:#d83c3a;border:0;color:#fcfdfe;font:18px Hvn;width:191px;padding:5px 0;margin:20px 0 0 279px;text-transform:uppercase;cursor:pointer}
+.write_us .send:hover{
+color:#ffc}
+.write_us .required{
+color:red}
+.write_us .info_req{
+font-size:18px}
+.modal_win{
+position:absolute;width:462px;left:50%;margin-left:-236px;top:100px;-webkit-box-shadow:0 0 28px 6px rgba(0,0,0,.3);-moz-box-shadow:0 0 28px 6px rgba(0,0,0,.3);box-shadow:0 0 28px 6px rgba(0,0,0,.3);background:#f6f2ec;color:#3e3e3e;z-index:1001}
+.modal_win .text{
+position:relative;z-index:10;line-height:18px;font-size:18px;font-family:Hvn;color:#0b0b0b;text-align:center;padding-top:49px;padding-bottom:43px;-webkit-box-shadow:0 3px 7px 1px rgba(0,0,0,.2);-moz-box-shadow:0 3px 7px 1px rgba(0,0,0,.2);box-shadow:0 3px 7px 1px rgba(0,0,0,.2)}
+.modal_win .wrap_button{
+position:relative;z-index:5;width:100%;padding-top:25px;height:62px;background:#d83c3a;text-align:center;cursor:pointer}
+.modal_win .wrap_button span{
+text-transform:uppercase;font-size:25px;color:#fdfdfc;border-bottom:1px dashed #fdfdfc;font-family:Hvn}
+.ac{
+padding:10px 0 20px 17px;list-style:disc}
+.participate ul{
+list-style:none!important}
+.actorLeft ul{
+padding:0 0 20px 17px;list-style:disc}
+.actorLeft p{
+margin:10px 0}
+.orderTickets .asterisk:after,
+.questionnaire .asterisk:after{
+content:' *';color:red}
+.orderTickets div.error,.orderTickets input.error,.orderTickets textarea.error,
+.questionnaire div.error,.questionnaire input.error,.questionnaire textarea.error{
+border:1px solid red}
+.orderTickets .partnersBlock{
+width:150px;border:1px solid #C51A31;border-radius:10px;padding:10px;float:right}
+.orderTickets .partnersBlock p.header{
+font:18px/16px Hvn}
+.orderTickets .advertisement a{
+color:#990101;font:18px/16px Hvn;background:0 0}
+.orderTickets .advertisement a:hover{
+color:#990101}
+.club p{
+margin-bottom:20px}
+.normal_link{
+padding:0!important;margin:0!important;display:inline!important;background:0 0!important;text-decoration:underline!important;float:none!important;transition:none!important;height:auto!important;width:auto!important;font:inherit!important;color:#990101!important}
+.normal_link:hover{
+color:red!important}
+.premierLabel{
+font:20px Hvn!important;color:#ff6c00!important;text-transform:uppercase}
+.bx-core-waitwindow{
+display:none!important}
+.rssexport{
+padding:20px 0}
+.rssexport .Zagl{
+color:#2D2D2D;font:19px Hvn}
+.rssexport a{
+color:#6A6A6A;font:18px Hvn;text-decoration:none}
+.rssexport a span{
+font:18px 'Hvn Regular'}
+.rssexport a:hover{
+color:#ce0402}
+.separator{
+border-bottom:1px dotted #B8B7AF}
+.pageHalls h2{
+font:20px Hvn;color:#3e3e3e;padding-bottom:25px}
+.pageHalls .bigHall #board{
+position:absolute;top:880px;display:block;padding:4px;width:120px;height:250px;border-radius:5px;border:1px solid #CCC;text-align:center;font-size:15px;font-family:'Hvn Regular';color:#000;background-color:#FFECDC}
+.pageHalls .bigHall #popup_seatDesc{
+position:absolute;top:680px;padding:10px;width:920px;margin:0 auto;height:570px;border-radius:5px;border:1px solid #CCC;text-align:center;font-size:15px;font-family:'Hvn Regular';color:#000;background-color:#FFECDC;z-index:1001;display:none}
+.pageHalls .bigHall .plan #imapc{
+display:block;width:900px;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:1em;border:0}
+.pageHalls .bigHall .plan #imapc #imap{
+top:-320px;width:900px;margin:0;padding:0}
+.pageHalls .bigHall #areas{
+width:100%;box-sizing:border-box;-moz-box-sizing:border-box}
+.pageHalls .bigHall .plan #imapc figcaption{
+text-align:center}
+.pageHalls .efrHall{
+width:100%;overflow:hidden;padding:20px 0;min-height:400px}
+.pageHalls .efrHall .plan .row{
+clear:both}
+.pageHalls .efrHall .choose .element,.pageHalls .efrHall .plan .row .element{
+width:24px;height:24px;border-collapse:collapse;padding:0;float:left;text-align:center;cursor:pointer}
+.pageHalls .efrHall .choose .element.seat{
+border:2px solid #F6F2EC}
+.pageHalls .efrHall .choose .element.blank .build{
+border:2px solid #ccc}
+.pageHalls .efrHall .choose .element.stage,.pageHalls .efrHall .plan .row .element.stage{
+background-color:#990101}
+.pageHalls .efrHall .choose .element.stage{
+border:2px solid transparent}
+.pageHalls .efrHall .choose .element.rowLabel,.pageHalls .efrHall .choose .element.rowNumber,.pageHalls .efrHall .plan .row .element.rowLabel,.pageHalls .efrHall .plan .row .element.rowNumber{
+color:#000;border-radius:5px;font-style:italic;background-color:#EEE;font-weight:800}
+.pageHalls .efrHall .choose .element.rowLabel,.pageHalls .efrHall .choose .element.rowNumber{
+border:2px solid #fff}
+.pageHalls .efrHall .plan .row .element.rowLabel,.pageHalls .efrHall .plan .row .element.rowNumber{
+border:1px solid #fff}
+.pageHalls .efrHall .choose .element.active{
+border:2px solid #00528F}
+.pageHalls .efrHall .label{
+display:block;padding:4px;width:150px;height:20px;top:20px;border-radius:5px;border:1px solid #CCC;text-align:center;font-size:18px;font-family:'Hvn Regular';position:relative;float:left;clear:both;color:#000}
+.pageHalls .efrHall .label #label_row,.pageHalls .efrHall .label #label_seat{
+font-weight:700;display:inline-block}
+.pageHalls .efrHall .choose .save{
+background-color:#a5b557;color:#fff;padding:10px;margin:20px 0;float:right;cursor:pointer}
+.pageHalls .efrHall .choose .element.blank .build,.pageHalls .efrHall .plan .row .element.blank.build{
+background-color:#eee;border-radius:5px}
+.pageHalls .efrHall .choose .element.seat,.pageHalls .efrHall .plan .row .element.seat{
+color:#FFF;border-radius:5px}
+.pageHalls .efrHall .plan .row .element.seat{
+border:1px solid #ccc}
+.pageHalls .efrHall .choose .element.seat.typeA,.pageHalls .efrHall .plan .row .element.seat.typeA{
+background-color:#ff7801}
+.pageHalls .efrHall .choose .element.seat.typeB,.pageHalls .efrHall .plan .row .element.seat.typeB{
+background-color:#e15400}
+.pageHalls .efrHall .plan .row .element.rowseatNumber{
+font-size:18px}
+.pageHalls .efrHall .plan .row .element.blank{
+border:1px solid transparent}
+.pageHalls .efrHall .plan .row .element.blank.build{
+border:1px solid #ccc}
+.pageHalls .efrHall .plan .row .element.stage{
+border:1px solid transparent}
+.pageHalls .efrHall .plan .row .element.active{
+border:1px solid #00528F}
+.pageHalls .efrHall .choose .element.seat:hover,.pageHalls .efrHall .plan .row .element.seat:hover{
+background-color:#FEBC11;color:#990101}
+.pageHalls .efrHall .plan .row .element:not(.blank):hover{
+border:1px solid #990101}
+.pageHalls .efrHall .choose .element:hover{
+border:2px solid #990101}
+.status {
+font: italic 18px Hvn Regular;
+}
+/*
+ Цвет, используемый для ссылок и коментариев к ним
+*/
+.aColor {
+color: #990101;
+}
+.news p {
+font-size: 18px !important
+}
+.news p a {
+font-size: 18px !important
+}
+.show-hide-panel.show{
+background:url(/_images/icoArrow-Down.svg) center center no-repeat #990101 !important}
+.show-hide-panel.hide {
+background: url(/_images/icoArrow-Up.svg) center center no-repeat #990101 !important}
+/* На главной странице всплываюее окно с формой подписки на Новости театра */
+.mail-form, .mail-form * {
+    box-sizing: border-box;
+}
+.mail-form {
+    position: absolute;
+    width: 656px;
+    top: 0px;
+    background: #f6f2ec;
+    padding: 25px;
+    font: 14px/1.2em 'Hvn Regular', sans-serif;
+    color: #252525;
+    z-index: 1001;
+    display: block;
+    max-width: 100%;
+}
+.mail-form .header {
+    font: 16px Hvn;
+    color: #252525;
+    text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.mail-form .mail-form-fields-wrapper .element-container .field .submit,
+.mail-form .mail-form-fields-wrapper {
+    max-width: 100%;
+}
+.mail-form .mail-form-fields-wrapper * {
+	margin: 0 auto;
+    width: 570px;
+}
+.mail-form .mail-form-fields-wrapper .element-container {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative;
+}
+.mail-form .mail-form-fields-wrapper .element-container .field {
+    -ms-flex: 1 .8;
+    flex: 1 .8;
+    min-width: 180px;
+    min-height: 51px;
+    padding: 8px;
+    position: relative;
+    text-align: left;
+}
+
+.mail-form .mail-form-fields-wrapper .element-container .field .form-control {
+    background: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 15px;
+    padding-left: 8.75px;
+    padding-right: 8.75px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 35px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.mail-form .mail-form-fields-wrapper .element-container .field label {
+    color: #444444;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+}
+.mail-form .mail-form-fields-wrapper .element-container .field>.control-label {
+    word-wrap: break-word;
+}
+.mail-form .mail-form-fields-wrapper .element-container .field>label {
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+}
+.mail-form button,
+.mail-form input,
+.mail-form input[type=text],
+.mail-form input[type=email] {
+	color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.mail-form .submit {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #fdb930;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    display: inline-block;
+    text-decoration: none;
+    outline: 0!important;
+    border: none;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    cursor: pointer;
+    min-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    font-size: 15px;
+    height: 35px;
+    white-space: nowrap;
+    text-transform: none;
+}

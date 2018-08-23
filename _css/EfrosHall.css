@@ -1,0 +1,112 @@
+/* EFROS HALL */
+
+div.Efr_header{
+	padding:4px 4px 4px 4px;
+	text-align:center;
+	font-size:16px;
+	font-family:'Candal', sans-serif;
+	color: black;
+}
+
+div.Efr_label{
+	display:block;
+	padding:4px 4px 4px 4px;
+	width:150px;
+	height:20px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	text-align:center;
+	font-size:16px;
+	font-family:'Candal', sans-serif;
+	color: black;
+}
+
+div.Efr_label #Efr_label_seat, div.Efr_label #Efr_label_row{
+	display:inline-block;
+	font-size:16px;
+	font-weight:700;
+}
+
+div.Efr_block {
+	margin-top: 50px;
+	width:620px;
+	text-align:center;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	unselectable: on;
+}
+div.Efr_hall{
+	display:inline-block;
+	vertical-align:middle;
+	padding:4px 4px 4px 4px;
+	width: 620px;
+	text-align:center;
+	vertical-align:middle;
+	cursor: pointer;
+}
+div.Efr_hall .Efr_scene{
+	display: table-cell;
+	vertical-align:middle;
+	margin-top: -20px;
+	margin-left: 58px;
+	display:block;
+	background-color:#990101;
+	color: white;
+	text-align:center;
+	align:center;
+	font-size:14px;
+	padding:4px 4px 4px 4px;
+	font-family:'Candal', sans-serif;
+}
+div.Efr_hall .Efr_row{
+	display:block;
+	text-align:left;
+	margin-left: 10px;
+}
+div.Efr_hall .Efr_row .Efr_seat
+{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	color: white;
+	text-align:center;
+	font-size:14px;
+	border-radius:5px;
+	padding:2px 2px 2px 2px;
+	margin: 0px;
+	font-family:'Candal', sans-serif;
+}
+div.Efr_hall .Efr_row .Efr_seat.Efr_active
+{
+	border:1px solid #ffffff;
+	background-color:#ff7801;
+}
+div.Efr_hall .Efr_row .Efr_seat.Efr_hidden
+{
+	border:1px;
+	margin: 1px;
+	padding:2px 2px 2px 2px;
+}
+div.Efr_hall .Efr_row .Efr_rowCount
+{
+	width:50px;
+	height:20px;
+	display:inline-block;
+	color: #999;
+	text-align:left;
+	font-size:12px;
+	padding:2px 2px 2px 2px;
+	margin: 0px;
+	spacing: 0px;
+	font-family:'Candal', sans-serif;
+	font-style:italic;
+}
+div.Efr_hall .Efr_row .Efr_seat.Efr_active:hover {
+	background:#FEBC11;
+	color:#990101;
+	border:1px solid #990101;
+}
+div.Efr_hall .Efr_row .Efr_seat.Efr_hidden:hover {
+	border:1px;
+}

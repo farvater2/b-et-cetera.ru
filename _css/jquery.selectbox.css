@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+.sbHolder{
+    background: #f8f6f4;
+    height: 28px;
+    position: relative;
+    width: 335px;
+    box-shadow: inset 0px 2px 3px #d2d0cf;
+    margin: 5px 0px 10px;
+    border: 1px solid #cfcfcf;
+    border-bottom: 0px;
+}
+.sbHolder:focus .sbSelector{
+
+}
+
+.leftColumn .secondPageWrap .sbSelector{
+    display: block;
+    height: 28px;
+    left: 10px;
+    line-height: 28px;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 5px;
+    width: 295px;
+    font: 14px Hvn Regular;
+    color: #262626;
+}
+.cl1, .cl2, .cl3{
+    margin-right: 25px;
+}
+div.cl1{
+    width: 80px;
+    float: left;
+}
+.sbOptions{
+    display: none;
+}
+div.cl1 .sbOptions{
+    width: 50px;
+}
+.leftColumn .secondPageWrap .cl1 .sbSelector{
+    width: 40px;
+}
+div.cl2, div.cl3{
+    width: 150px;
+    float: left;
+}
+div.cl2 .sbOptions, div.cl3 .sbOptions{
+    width: 120px;
+}
+.leftColumn .secondPageWrap .cl2 .sbSelector, .leftColumn .secondPageWrap .cl3 .sbSelector{
+    width: 110px;
+}
+.sbToggle{
+    background: #d83c3a url(../_images/bgSelectArrow.png) center center no-repeat;
+    display: block;
+    height: 28px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+.sbToggle:hover, .sbToggleOpen:hover{
+    background: #9e2725 url(../_images/bgSelectArrow.png) center center no-repeat;
+}
+.sbToggleOpen{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+.sbOptions{
+    background-color: #f8f6f4;
+    border: 1px solid #cfcfcf;
+    border-top: 0px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    left: -1px;
+    position: absolute;
+    width: 305px;
+    z-index: 1;
+    overflow-y: auto;
+}
+.leftColumn .secondPageWrap .sbOptions li a,
+.leftColumn .secondPageWrap .sbOptions li .sbDisabled{
+    display: block;
+    outline: none;
+    padding: 5px 0px 5px 10px;
+    color: #262626;
+    font: 14px Hvn Regular;
+}
+.leftColumn .secondPageWrap .sbOptions li .sbDisabled{
+    background-color: #DDD;
+}
+.leftColumn .secondPageWrap .sbOptions li a:hover{
+    background: #d83c3a;
+    color: #fdfdfd;
+}
