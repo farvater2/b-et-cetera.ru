@@ -106,7 +106,6 @@ $(document).ready(function() {
     $('.popup_mailing').fadeIn();
     $(window).scrollTop();
   });
-  
 
   // Всплывающее окно АНКЕТА
   $('body').on('click', '.questionnaireLabel', function() {
